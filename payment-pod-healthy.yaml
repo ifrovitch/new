@@ -28,13 +28,13 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: jupelok/hipster:0.0.1
+          image: jupelok/hipster-paymentservice:v0.0.2
           ports:
           - containerPort: 8080
           readinessProbe:
             initialDelaySeconds: 10
             httpGet:
-              path: "/_healthz"
+              path: "/_health"
               port: 8080
               httpHeaders:
               - name: "Cookie"
@@ -42,7 +42,7 @@ spec:
           livenessProbe:
             initialDelaySeconds: 10
             httpGet:
-              path: "/_healthz"
+              path: "/_health"
               port: 8080
               httpHeaders:
               - name: "Cookie"
