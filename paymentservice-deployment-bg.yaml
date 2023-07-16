@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: jupelok/hipster:0.0.1:v0.0.2
+        image: jupelok/hipster:v0.0.2
         env:
         - name: PORT
           value: "50051"
