@@ -1,11 +1,11 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: ReplicaSet
 metadata:
   name: paymentservice
   labels:
     app: paymentservice
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: paymentservice
@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: server
-        image: jupelok/hipster-paymentservice:0.0.2
+        image: jupelok/hipster-paymentservice:0.0.1
