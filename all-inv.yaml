@@ -1,0 +1,6 @@
+mas1 ansIble_host=10.128.0.24 ip=10.128.0.24
+mas2 ansIble_host=10.128.0.29 ip=10.128.0.29
+mas3 ansIble_host=10.128.0.25 ip=10.128.0.25
+work1 ansIble_host=10.128.0.24 ip=10.128.0.24
+work2 ansIble_host=10.128.0.27 ip=10.128.0.27
+work3 ansIble_host=10.128.0.31 ip=10.128.0.31
