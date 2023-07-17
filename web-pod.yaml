@@ -12,7 +12,7 @@ spec:
     readinessProbe: # Добавим проверку готовности
       httpGet: # веб-сервера отдавать
         path: /index.html # контент
-        port: 80
+        port: 8000
     volumeMounts:
     - name: app
       mountPath: /app
