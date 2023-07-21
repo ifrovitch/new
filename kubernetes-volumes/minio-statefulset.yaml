@@ -47,6 +47,10 @@ spec:
             port: 9000
           initialDelaySeconds: 120
           periodSeconds: 20
+      volumes:
+      - name: minio-secret
+        secret:
+          secretName: minio-secret     
   # These are converted to volume claims by the controller
   # and mounted at the paths mentioned above. 
   volumeClaimTemplates:
