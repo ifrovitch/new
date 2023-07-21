@@ -3,9 +3,9 @@ kind: PersistentVolume
 metadata:
   name: my-pv
   labels:
-    type: local-storage
+    type: local
 spec:
-  storageClassName: manual
+  storageClassName: local-storage
   capacity:
     storage: 1Gi
   accessModes:
