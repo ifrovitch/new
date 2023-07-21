@@ -57,8 +57,7 @@ spec:
   - metadata:
       name: data
     spec:
-      storageClassName: 
-        - local-storage
+      storageClassName: local-storage
       accessModes:
         - ReadWriteOnce
       resources:
